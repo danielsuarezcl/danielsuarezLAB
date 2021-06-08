@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/formularios.js"></script>
+    <script src="js/alert.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Daniel Suárez</title>
+</head>
+
+<body>
+    <main id="content">
+        <header id="sup">
+            <div class="logobg"><img class="logo" src="images/logo.png" alt="logo"></div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li class="inicio-btn"><a href="blog.html">Blog</a></li>
+                    <li><a href="#bajada">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="box">
+            <section id="articulos">
+                <p class="header">Si quieres conocer más de este mundo, puedes conocer las últimas novedades en fotografía, video, artículos, recomendaciones, trucos y consejos en esta sección.</p>
+                <div class="box-2-art">
+                    <section class="section-box">
+                        <h1>Accesorios fotográficos: Mega-guía de usos, consejos de compra y recomendaciones</h1>
+                        <div class="box-select">
+                            <img class="art-img" src="images/photo-1995691_1280.jpg" alt="">
+                        </div>
+                        <p class="bajada-art">Voy a recopilarte en esta completísima guía todo lo que sé sobre accesorios en fotografía, mis mejores recomendaciones, cuáles son para ti y cuáles no...</p>
+                        <h3>Comentarios (4)</h3>
+                    </section>
+                    <section class="section-box">
+                        <h1>Cómo hacer mejores fotos con cámaras automáticas y semiautomáticas</h1>
+                        <div class="box-select">
+                            <img class="art-img" src="images/photographer-640419_1280.jpg" alt="">
+                        </div>
+                        <p class="bajada-art">El modo automático y los semiautomáticos pueden serte muy útiles en algunas ocasiones y con algunos trucos podrás conseguir buenos...</p>
+                        <h3>Comentarios (3)</h3>
+                    </section>
+                </div>
+                <div class="box-2-art">
+                    <section class="section-box">
+                        <h1>La Guía Completa Para Hacer Fotografía Gastronómica</h1>
+                        <div class="box-select">
+                            <img class="art-img" src="images/salad-2068220_1280.jpg" alt="">
+                        </div>
+                        <p class="bajada-art">Puede que a priori, hasta ahora, nadie pensara de entrada que su sueño era hacer fotografía gastronómica. No sé, creo quizá que solemos soñar...</p>
+                        <h3>Comentarios (2)</h3>
+                    </section>
+                    <section class="section-box">
+                        <h1>El mejor trípode para tu cámara de fotografía y/o video</h1>
+                        <div class="box-select">
+                            <img class="art-img" src="images/night-1927265_1280.jpg" alt="">
+                        </div>
+                        <p class="bajada-art">El trípode es uno de los elementos clave para video. Si para fotografía es recomendable, para video es obligado. Los trípodes te permiten grabar...</p>
+                        <h3>Comentarios (7)</h3>
+                    </section>
+                </div>
+                <div class="box-2-art">
+                    <section class="section-box">
+                        <h1>Descubre qué es la luz continua en fotografía (y cómo utilizarla)</h1>
+                        <div class="box-select">
+                            <img class="art-img" src="images/night-5222267_1280.jpg" alt="">
+                        </div>
+                        <p class="bajada-art">La luz continua es, seguramente, la que más utilizamos cuando nos iniciamos en el mundo de la fotografía. Ahora bien, ¿sabes utilizarla...</p>
+                        <h3>Comentarios (11)</h3>
+                    </section>
+                    <section class="section-box">
+                        <h1>Consigue las mejores fotografías de calle con el móvil con estos trucos y consejos</h1>
+                        <div class="box-select">
+                            <img class="art-img" src="images/girl-1031169_1280.jpg" alt="">
+                        </div>
+                        <p class="bajada-art">Hace muy poco te contaba que la mejor forma de aprender fotografía es practicar la street photography...</p>
+                        <h3>Comentarios (4)</h3>
+                    </section>
+                </div>
+            </section>
+            <aside id="aside">
+                <div class="box-int">
+                    <article class="art-title" id="diaSemana"></article>
+                    <img class="aside-img" src="images/city-336708_1280.jpg" alt="">
+                    <div class="news">¿Quieres conocer más? <br>suscríbete aquí</div>
+                    <form action="" class="form">
+                        <input class="input" type="text" placeholder="Nombre" id="nombre" onchange="susValidaNombre()">
+                        <p id="SmsgNombre"></p>
+                        <input class="input" type="tel" placeholder="Teléfono" id="fono" onchange="susValidaFono()">
+                        <p id="SmsgFono"></p>
+                        <input class="input" type="email" placeholder="Correo" id="correo" onchange="susValidaCorreo()">
+                        <p id="SmsgCorreo"></p>
+                        <input onclick="muestraMensaje()"  class="submit" type="submit" value="Suscríbete">
+                    </form>
+                </div>
+            </aside>
+        </main>
+        <div id="bajada">
+            <div class="contact-inf">
+                <h1>Contacto</h1>
+                <p>Te gusta lo que hago y crees que es lo que tu empresa o proyecto necesita, entonces contáctame para llevar a cabo las ideas que tienes en mente.</p>
+                <p><b>Whatsapp:</b> +5694567890</p>
+                <p><b>Correo:</b> hola@danielsuarez.cl</p>
+            </div>
+            <div class="contact-sup">
+                <form action="" class="form-contact">
+                    <div class="form-box">
+                        <div class="form-row">
+                            <div class="form-2-column">
+                                <input class="input" type="cNombre" placeholder="Nombre" id="cntnombre" onchange="cntValidaNombre()">
+                                <p id="cNombre"></p>
+                            </div>
+                            <div class="form-2-column">
+                                <input class="input" type="cApellido" placeholder="Apellido" id="cntapellido" onchange="cntValidaApellido()">
+                                <p id="cApellido"></p>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-2-column">
+                                <input class="input" type="cCorreo" placeholder="Correo" id="cntcorreo" onchange="cntValidaCorreo()">
+                                <p id="cCorreo"></p>
+                            </div>
+                            <div class="form-2-column">
+                                <input class="input" type="cTelefono" placeholder="Teléfono" id="cnttelefono" onchange="cntValidaTelefono()">
+                                <p id="cTelefono"></p>
+                            </div>
+                        </div>
+                        <textarea class="input" type="cMensaje" placeholder="Mensaje" id="cntmensaje" onchange="cntValidaMensaje()"></textarea>
+                        <p id="cMensaje"></p>
+                        <input onclick="muestraMensaje()" class="submit" type="button" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer id="pie">Daniel Suárez, 2021<br>Algunos derechos reservados - Hecho con &#x2764;&#xFE0F;</footer>
+    </main>
+</body>
+
+</html>
